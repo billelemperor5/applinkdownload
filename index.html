@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق مصاريفي - Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Poppins:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-glow"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-wallet"></i> <span data-lang="app_name">مصاريفي</span>
+        </div>
+
+        <div class="nav-controls">
+            <div class="nav-links">
+                <a href="#features" data-lang="nav_features">المميزات</a>
+                <a href="https://median.co/share/pwwweew#apk" target="_blank" data-lang="nav_download">تحميل</a>
+                <a href="#about" data-lang="nav_about">عن المطور</a>
+                <a href="#contact" data-lang="nav_contact">تواصل معي</a>
+            </div>
+
+            <div class="settings-group">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+
+                <div class="lang-dropdown">
+                    <button class="lang-btn">
+                        <i class="fa-solid fa-globe"></i> <span id="current-lang">AR</span>
+                    </button>
+                    <div class="lang-menu">
+                        <a href="#" onclick="setLanguage('ar')">العربية</a>
+                        <a href="#" onclick="setLanguage('en')">English</a>
+                        <a href="#" onclick="setLanguage('fr')">Français</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge" data-lang="hero_badge">الإصدار الجديد v1.0</span>
+            <h1 data-lang="hero_title">تحكم في <span class="gradient-text">مصاريفك</span> بذكاء</h1>
+            <p data-lang="hero_desc">التطبيق الشامل لإدارة ميزانيتك، تتبع نفقاتك، وتسجيل حضورك وغيابك. كل ما تحتاجه في
+                مكان واحد.</p>
+            <div class="cta-buttons">
+                <a href="https://median.co/share/pwwweew#apk" class="btn btn-primary" target="_blank">
+                    <i class="fa-brands fa-android"></i> <span data-lang="btn_download">تحميل للأندرويد</span>
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    <span data-lang="btn_more">اكتشف المزيد</span> <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="phone-frame">
+                <img src="images/app.png" alt="App Screenshot" class="app-screen"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="screen-placeholder">
+                    <i class="fa-solid fa-image"></i>
+                    <p>images/app.png</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="section-header">
+            <h2 data-lang="features_title">لماذا تختار تطبيقنا؟</h2>
+            <p data-lang="features_subtitle">مجموعة من الأدوات القوية المصممة لراحتك</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon-box"><i class="fa-solid fa-chart-pie"></i></div>
+                <h3 data-lang="feat_1_title">تتبع المصاريف</h3>
+                <p data-lang="feat_1_desc">سجل كل مصروفاتك بدقة واعرف أين تذهب أموالك من خلال تقارير مفصلة ورسوم بيانية.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box"><i class="fa-solid fa-calendar-check"></i></div>
+                <h3 data-lang="feat_2_title">سجل الحضور</h3>
+                <p data-lang="feat_2_desc">نظام متكامل لتسجيل الحضور والغياب، مثالي للعمل أو الدراسة مع تقارير شهرية.
+                </p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box"><i class="fa-solid fa-wallet"></i></div>
+                <h3 data-lang="feat_3_title">المحفظة الذكية</h3>
+                <p data-lang="feat_3_desc">إدارة ذكية للميزانية مع خيارات لتوزيع المصاريف وتحديد الأهداف المالية.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-box"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                <h3 data-lang="feat_4_title">نسخ احتياطي</h3>
+                <p data-lang="feat_4_desc">لا تفقد بياناتك أبداً. ميزة النسخ الاحتياطي السحابي تضمن أمان معلوماتك
+                    واسترجاعها في أي وقت.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="images/billel.png" alt="Billel Bouraba"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="screen-placeholder" style="border-radius: 20px; height: 300px;">
+                    <i class="fa-solid fa-user"></i>
+                    <p>images/billel.png</p>
+                </div>
+            </div>
+            <div class="about-content">
+                <h2 data-lang="about_title">نبذة عن المطوّر – بلال بورابعة</h2>
+                <p data-lang="about_desc_1">أنا بلال بورابعة، مطوّر تطبيقات ومهتم بعالم البرمجة والتقنيات الحديثة منذ
+                    أكثر من عشر سنوات. بدأت رحلتي في هذا المجال عام 2014، ومنذ ذلك الوقت وأنا أعمل على تطوير مشاريع تجمع
+                    بين البساطة، الفعالية، وتجربة الاستخدام السلسة.</p>
+                <p data-lang="about_desc_2">أركز في عملي على بناء حلول عملية تلائم احتياجات المستخدم اليومية، سواء في
+                    إدارة المصاريف، تنظيم الأعمال، أو تحسين الإنتاجية. تطبيق مصاريفي هو واحد من المشاريع التي طُوّرت
+                    بشغف كبير، ليقدّم تجربة ذكية وسهلة لكل من يريد التحكم في ميزانيته وإدارة نفقاته بطريقة حديثة وواضحة.
+                </p>
+                <p data-lang="about_desc_3">أشارك بشكل مستمر تجاربي وتحليلاتي التقنية عبر مدونتي وصفحاتي على وسائل
+                    التواصل، وأسعى دائماً لتطوير أدوات أفضل ودعم المستخدمين بكل ما يحتاجونه.</p>
+                <p data-lang="about_desc_4">إذا كان لديك أي استفسار، اقتراح، أو تريد التواصل معي مباشرة، فيسعدني ذلك
+                    دائماً.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2 data-lang="contact_title">تواصل مع المطور</h2>
+            <p data-lang="contact_desc">تابعني على وسائل التواصل الاجتماعي للحصول على آخر التحديثات والدعم.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/billel_bouraba/?hl=fr" target="_blank"
+                    class="social-btn instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/billel.bouraba" target="_blank" class="social-btn facebook"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="mailto:example@email.com" class="social-btn email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p data-lang="footer_copy">جميع الحقوق محفوظة &copy; 2025 تطبيق مصاريفي</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
